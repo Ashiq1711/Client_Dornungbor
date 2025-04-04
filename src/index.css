@@ -1,0 +1,85 @@
+/* google fonts */
+
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* google fonts */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.svg-icon{
+  fill: black !important;
+  height: 24px !important;
+}
+
+.svg-hover:hover .svg-icon{
+  transform: scale(1.1) !important;
+ fill: white !important;
+}
+.section-padding-x {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.section-padding-y {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 650px){
+  .section-padding-x {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-padding-y {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .svg-icon{
+    height: 30px !important;
+  }
+  
+}
+
+@media screen and (min-width: 1300px){
+  .section-padding-x {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .section-padding-y {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .svg-icon{
+    height: 40px !important;
+  }
+}
+@media screen and (min-width: 1800px){
+  .section-padding-x {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+  .section-padding-y {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .svg-icon{
+    height: 60px !important;
+  }
+}
